@@ -1,0 +1,24 @@
+{
+  "name": "swagger-nodejs",
+  "version": "1.0.0",
+  "description": "Создано по [статье](https://habr.com/ru/companies/timeweb/articles/594081/)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development nodemon server.js",
+    "start": "cross-env NODE_ENV=production node server.js",
+    "gen": "node ./swagger/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "express": "^4.19.2",
+    "lowdb": "^7.0.1",
+    "nodemon": "^3.1.4",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
